@@ -42,6 +42,7 @@ const Register = () => {
         'Password must be at least 8 characters, including one special character and one number.';
       valid = false;
     }
+    
 
     if (formData.password !== formData.confirmPassword) {
       newErrors.confirmPassword = 'Passwords do not match.';
