@@ -1,0 +1,24 @@
+VSCode --> command prompt
+
+//check the installations of node
+node -v
+npm -v
+
+//creating a new react app
+npx create-react-app hues
+
+cd hues
+
+npm start
+
+//compiled with errors
+In package.json --> change the version from 19.0.0 to 18.0.0
+rmdir /s /q node_modules
+del package-lock.json
+npm install
+npm install web-vitals
+npm start
+
+
+//if error is encountered
+npm install react-router-dom
