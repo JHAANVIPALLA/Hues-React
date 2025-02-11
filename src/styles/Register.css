@@ -1,0 +1,167 @@
+/* Main Container */
+.register-container {
+    display: flex;
+    height: 80vh;
+    margin: 30px 8em 0px 8em;
+    box-shadow: 0 1px 20px rgba(19, 17, 17, 0.39);
+    border-radius: 20px; /* Curved Corners */
+    overflow: hidden;    /* Prevents child elements from overflowing the rounded corners */
+  }  
+  
+  /* Left Slider Section */
+  .slider-section1 {
+    width: 50%;
+    background-color: #c5e3d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Right Form Section (Updated for Registration) */
+  .form-section1 {
+    width: 50%;
+    padding: 20px;
+    padding-top: 35px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #444;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  /* Divider */
+  .divider1 {
+    margin: 10px 0;
+    text-align: center;
+    color: #888;
+    position: relative;
+  }
+  
+  .divider1::before,
+  .divider1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .divider1::before {
+    left: 0;
+  }
+  
+  .divider1::after {
+    right: 0;
+  }
+  
+  /* Sign-Up Link */
+  .signup-link {
+    margin-top: -5px;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .signup-link a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .register-container {
+      flex-direction: column;
+    }
+  
+    .slider-section1, .form-section1 {
+      width: 100%;
+      height: 50vh;
+    }
+  
+    .form-section1 {
+      padding: 20px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  }
+  
+  /* Specific adjustments for Register page fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+  
+  /* Registration page specific styles */
+  h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  .signup-link {
+    font-size: 1rem;
+  }
+  
+  .signup-link a {
+    font-size: 1.1rem;
+    color: #007BFF;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 4px;
+  }
+  
+  

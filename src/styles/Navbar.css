@@ -1,0 +1,59 @@
+   /* Navbar Styling */
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #532a4d; /* Dark purple */
+    height: 60px;
+  }
+
+  .navbar-logo {
+    width: 15rem;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: -20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+    margin-bottom: -10px;
+
+  }
+
+  .nav-links a {
+    color: rgb(218, 192, 126);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links li.active a {
+    color: #d679bfe8; /* White color for active link */
+    font-weight: bold;
+  }
+
+  .nav-links a:hover {
+    text-decoration: none;
+    color: #d679bfe8;
+  }
+
+  .nav-links li img:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+  }
+  .nav-links .home,
+  .nav-links .login {
+    margin-top: 8px;
+  }
+
+  .nav-links li.favorites img {
+    width: 40px;  /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 7px;
+  }
+  .nav-links li.cart img  {
+    width: 35px;  /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 5px;
+  }

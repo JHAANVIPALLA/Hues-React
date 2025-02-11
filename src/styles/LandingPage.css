@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); /* Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); /* Sacramento */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); /* Great Vibes */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap'); /* Parisienne */
+
+
+
+.landing-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.landing-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/huesBg.jpg') no-repeat center center/cover;
+  background-size: 105% 120%;
+  animation: rainbow-background 5s ease infinite; /* Background color animation */
+  opacity: 0.8; /* Adjust transparency (0 = fully transparent, 1 = fully visible) */
+  z-index: -1; /* Keeps the background behind other content */
+}
+
+
+  @keyframes rainbow-background {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .welcome-message {
+    font-size: 2.5rem;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #720356;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards; /* Animation for fade-in and slide-up */
+  }
+  
+  .logo img {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+  
+  .continue-btn {
+    padding: 10px 20px;
+  background-color: #720356;
+  color: rgb(255, 238, 144);
+  font-family: Dancing Script;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out 0.5s forwards; /* Animation for button fade-in and slide-up */
+  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .continue-btn:hover {
+    background: #ca5caf;
+  }
+  /* Fade In Up Animation */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Bounce In Animation */
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); /* Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); /* Sacramento */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); /* Great Vibes */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap'); /* Parisienne */
+
+/* General Styling */
+.main-container {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* Dashboard Styling */
+  .dashboard {
+    margin-top: 50px;
+  }
+  
